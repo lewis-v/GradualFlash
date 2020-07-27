@@ -1,0 +1,3 @@
+rootProject.name='GradualFlash'
+include ':app'
+include ':gradualflash'

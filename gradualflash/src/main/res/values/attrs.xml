@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="GradualFlashLayout">
+        <attr name="gf_low_color" format="color" />
+        <attr name="gf_height_color" format="color" />
+        <attr name="gf_color_type" format="enum">
+            <enum name="normal" value="1" />
+            <enum name="flash" value="2" />
+            <enum name="alpha" value="3" />
+        </attr>
+        <attr name="gf_direction" format="enum">
+            <enum name="left_to_right" value="1" />
+            <enum name="top_to_bottom" value="2" />
+            <enum name="right_to_left" value="3" />
+            <enum name="bottom_to_top" value="4" />
+        </attr>
+        <attr name="gf_repeat_count" format="integer" />
+        <attr name="gf_repeat_mode" format="enum">
+            <enum name="restart" value="1" />
+            <enum name="reverse" value="2" />
+        </attr>
+        <attr name="gf_duration" format="integer" />
+        <attr name="gf_rotate" format="float" />
+        <attr name="gf_auto_start" format="boolean" />
+        <attr name="gf_shape_mode" format="enum">
+            <enum name="line" value="0" />
+            <enum name="radial" value="1" />
+        </attr>
+
+    </declare-styleable>
+</resources>

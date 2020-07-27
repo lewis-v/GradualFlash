@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gf="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lewis.gradualflashSample.MainActivity">
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通-线性渐变"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="普通-半径渐变"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色模式-COLOR_TYPE_NORMAL"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="颜色模式-COLOR_TYPE_FLASH"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无动画,实现普通的渐变效果"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无动画-一半渐变"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg"
+            android:padding="10dp"
+            android:text="加个边框"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="边框放在容器里"
+                android:textColor="#34871293" />
+
+        </FrameLayout>
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg"
+            android:padding="10dp"
+            android:text="加个边框-COLOR_TYPE_FLASH"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <com.lewis.gradualflash.GradualFlashLayout
+        android:id="@+id/gf9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg"
+            android:padding="10dp"
+            android:text="加个边框-Xfermode使用MULTIPLY"
+            android:textColor="#34871293" />
+    </com.lewis.gradualflash.GradualFlashLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.lewis.gradualflash.GradualFlashLayout
+            android:id="@+id/gf10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            gf:gf_height_color="#000000"
+            gf:gf_low_color="#ff0000">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg"
+                android:padding="10dp"
+                android:text="xml中设置"
+                android:textColor="#34871293" />
+        </com.lewis.gradualflash.GradualFlashLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#333333">
+
+        <com.lewis.gradualflash.GradualFlashLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_bg"
+                android:padding="10dp"
+                android:text="默认添加的GF"
+                android:textColor="#34871293" />
+        </com.lewis.gradualflash.GradualFlashLayout>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg"
+        android:padding="10dp"
+        android:text="原始样式"
+        android:textColor="#34871293" />
+
+
+</LinearLayout>
